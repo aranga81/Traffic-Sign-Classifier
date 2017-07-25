@@ -14,7 +14,7 @@ Project Pipeline Covers the following subroutines:
 
 In this section I did implement the following logic:
 - Function logic to convert input training, validation and test images to GrayScale
-![](https://github.com/aranga81/Traffic-Sign-Classifier/blob/master/output%20images/grayscale.png)
+![Sample grayscale image](https://github.com/aranga81/Traffic-Sign-Classifier/blob/master/output%20images/grayscale.png)
 
 - Function to perform histogram equalization on the input images
 ![Histogram equalization of image](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/histogramequalization.png)
