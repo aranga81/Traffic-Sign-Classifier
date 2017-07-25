@@ -7,29 +7,33 @@ Project Pipeline Covers the following subroutines:
   
   Data - [German Traffic Signs](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 
-  Pickled Training, validation & test datasets are used for this project. Below is a visualization of the sample dataset.
-  ![Sample Dataset](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/dataset.png)
+  Pickled Training, validation & test datasets are used for this project. 
+  Below is a visualization of the sample dataset.
+  ![Sample Dataset](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/dataset.png)
     
 ## SECTION – 2: Designing / testing Model Architecture:
 
 In this section I did implement the following logic:
 - Function logic to convert input training, validation and test images to GrayScale
-![Sample grayscale image](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/grayscale.png)
+Below is a sample image converted to Grayscale
+![Sample grayscale image](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/grayscale.png)
 
 - Function to perform histogram equalization on the input images
-![Histogram equalization of image](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/histogramequalization.png)
+Histogram equalization of image
+![](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/histogramequalization.png)
 
 - Normalization: 
             The input images have pixel values in the range of [0 255]. Feature scaling is one such procedure which would normalize all the raw input data so that all the inputs are scaled. This would allow the gradient descent optimization search to converge faster likewise.
 
 After completing the pre-processing step sample dataset is as shown below:
-![Processed Dataset](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/datapreprocessing.png)
+![Processed Dataset](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/datapreprocessing.png)
 
 
 ### Data Augmentation:
 The provided training / test data was poorly distributed - this leads to biased learning of the model. A well know approach is to augment the dataset with additional fake data such that the final training/test sets are richly distributed among all the classes.
+
 Below figure shows distribution of the original training/validation and test data set:
-![Distribution for different classes](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/datadistribution.png)
+![Distribution for different classes](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/datadistribution.png)
 
 Data augmentation techniques as described in [Yann lecun paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)
 was implemented in my logic. 
@@ -39,13 +43,14 @@ Three techniques used for data augmentation are:
 -	Rotating the images from (-30, 30) range randomly
 -	Doing perspective transformation / zooming in in the range of (-2, 2) position values.
 
-![Data augmentation on sample image](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/dataaugmentation.png)
+Example of Data augmentation logic applied to a sample image:
+![Data augmentation on sample image](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/dataaugmentation.png)
 
 ### MODEL ARCHITECTURE:
 
 The final architecture used for my training was a 6 layer modified LeNet (Refer to the Model architecture section in project writeup).
 
-![Model Architecture](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/ModifiedLeNetModel.png)
+![Model Architecture](https://raw.github.com/aranga81/Traffic-Sign-Classifier/master/output%20images/ModifiedLeNetModel.PNG)
 
 ## SECTION 3: TRAINING:
 HYPERPARAMETERS:
