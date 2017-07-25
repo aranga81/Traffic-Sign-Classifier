@@ -3,14 +3,14 @@ Model Trained using CNN / Modified LeNet architecture to classify German Road Si
 
 Project Pipeline Covers the following:
 
-# Section1: Data Summary and Visualization:
+## Section1: Data Summary and Visualization:
   
   Data - German Traffic Signs
   Original Source: http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset
 
   Pickled Training, validation & test datasets are used for this project. 
     
-# SECTION – 2: Designing / testing Model Architecture:
+## SECTION – 2: Designing / testing Model Architecture:
 
 In this section I did implement the following logic:
 - Function logic to convert input training, validation and test images to GrayScale
@@ -21,7 +21,7 @@ In this section I did implement the following logic:
             The input images have pixel values in the range of [0 255]. Feature scaling is one such procedure which would normalize all the raw input data so that all the inputs are scaled. This would allow the gradient descent optimization search to converge faster likewise.
 
 
-# Data Augmentation:
+### Data Augmentation:
 Data augmentation techniques as described in http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf
 Is implemented in my logic. 
 
@@ -30,12 +30,12 @@ Three techniques used for data augmentation are:
 -	Rotating the images from (-30, 30) range randomly
 -	Doing perspective transformation / zooming in in the range of (-2, 2) position values.
 
-# MODEL ARCHITECTURE:
+### MODEL ARCHITECTURE:
 
 The final architecture used for my training was a 6 layer modified LeNet (Refer to the Model architecture section in project writeup).
 
 
-# SECTION 3: TRAINING:
+## SECTION 3: TRAINING:
 HYPERPARAMETERS:
 
 The following Hyper parameters have been used for training:
