@@ -1,14 +1,14 @@
 # Traffic-Sign-Classifier
-Model Trained using CNN / Modified LeNet architecture to classify German Road Signs
+Model Trained using CNN / Modified LeNet architecture to classify German Road Traffic Signs
 
-Project Pipeline Covers the following:
+Project Pipeline Covers the following subroutines:
 
 ## Section1: Data Summary and Visualization:
   
-  Data - German Traffic Signs
-  Original Source: http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset
+  Data - [German Traffic Signs](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 
-  Pickled Training, validation & test datasets are used for this project. 
+  Pickled Training, validation & test datasets are used for this project. Below is a visualization of the sample dataset.
+  ![#### Sample Training Dataset](/output images/dataset.png)
     
 ## SECTION – 2: Designing / testing Model Architecture:
 
@@ -22,8 +22,8 @@ In this section I did implement the following logic:
 
 
 ### Data Augmentation:
-Data augmentation techniques as described in http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf
-Is implemented in my logic. 
+Data augmentation techniques as described in [Yann lecun paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)
+was implemented in my logic. 
 
 Three techniques used for data augmentation are:
 -	Translating image data set randomly in the range of (-2, 2) pixel positions
