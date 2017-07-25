@@ -8,7 +8,7 @@ Project Pipeline Covers the following subroutines:
   Data - [German Traffic Signs](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 
   Pickled Training, validation & test datasets are used for this project. Below is a visualization of the sample dataset.
-  ![#### Sample Training Dataset](/output images/dataset.png)
+  ![sample dataset](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/dataset.png)
     
 ## SECTION – 2: Designing / testing Model Architecture:
 
