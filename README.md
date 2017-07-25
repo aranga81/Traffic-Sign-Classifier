@@ -45,7 +45,7 @@ Three techniques used for data augmentation are:
 
 The final architecture used for my training was a 6 layer modified LeNet (Refer to the Model architecture section in project writeup).
 
-![Model Architecture](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/ModifiedLeNetMode.png)
+![Model Architecture](https://github.com/aranga81/Traffic-Sign-Classifier/tree/master/output%20images/ModifiedLeNetModel.png)
 
 ## SECTION 3: TRAINING:
 HYPERPARAMETERS:
